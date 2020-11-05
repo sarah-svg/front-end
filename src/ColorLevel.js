@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 export default class ColorLevel extends Component {
+
+
+
+    
     render() {
         return (
             <div>
@@ -10,7 +14,7 @@ export default class ColorLevel extends Component {
                         Name:{this.props.color.name}
                     </li>
                     <li>
-                        Cool Factor:{this.props.color.cool_factor}
+                        Cool Factor:{this.props.color.cool_factor_id}
                     </li>
                 
                 
