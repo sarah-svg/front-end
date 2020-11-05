@@ -8,6 +8,7 @@ import DetailPage from './DetailPage.js';
 import Home from './Home.js';
 import Header from './Header.js'
 import './App.css';
+import CreateColorPage from './CreateColorPage.js';
 // Params are placeholders in the URL that begin
 // with a colon, like the `:id` param defined in
 // the route in this example. A similar convention
@@ -21,7 +22,11 @@ export default class ParamsExample extends Component {
     
           <Header />
           <Switch>
-           
+          <Route 
+              path="/createColorPage" 
+              exact
+              render= {(routerProps) => <CreateColorPage { ...routerProps} />}
+            /> 
             <Route 
               path="/detailPage" 
               exact
@@ -31,7 +36,7 @@ export default class ParamsExample extends Component {
               path="/" 
               exact
               render= {(routerProps) => <Home { ...routerProps} />}
-            />        
+            />      
           </Switch>
           
   

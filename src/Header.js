@@ -12,7 +12,8 @@ export default class Header extends Component {
                 <div></div>
                 <Link to="/">Home
                 </Link>
-               
+                <Link to="/createColorPage">Add a new color
+                </Link>
             </div>
         )
     }
