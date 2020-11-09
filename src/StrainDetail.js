@@ -46,7 +46,7 @@ export default class StrainDetail extends Component {
 
     render() {
         return (
-            <div>
+            <div className="updatePage">
                 <h1>Update</h1>
                 <form className="update" onSubmit={this.handleSubmit}>
                     <label>Name ID: <input type="text" id="name_id" name="name_id" defaultValue={this.state.strains.name_id} onChange={this.handleChange} /></label>

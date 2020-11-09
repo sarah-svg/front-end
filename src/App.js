@@ -9,6 +9,7 @@ import Home from './Home.js';
 import AddStrain from './AddStrain.js';
 import StrainDetail from './StrainDetail.js';
 import Header from './Header.js';
+import './App.css';
 // Params are placeholders in the URL that begin
 // with a colon, like the `:id` param defined in
 // the route in this example. A similar convention
@@ -18,7 +19,7 @@ import Header from './Header.js';
 export default class ParamsExample extends Component {
   render() {
     return (
-      <Router>
+      <Router className="App">
     
           <Header />
           <Switch>

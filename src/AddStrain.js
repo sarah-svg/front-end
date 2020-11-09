@@ -31,7 +31,7 @@ export default class AddStrain extends Component {
 
     render() {
         return (
-            <div>
+            <div className="add"> 
                 <h1>Add New Strain</h1>
                 <form id='add-form' className="column" onSubmit={this.handleSubmit}>
                     <label>Name ID: <input type="text" id="name_id" name="name_id" defaultValue="star killer" onChange={this.handleChange} /></label>
@@ -53,8 +53,7 @@ export default class AddStrain extends Component {
                     </select></label>
                     <input type="submit" value="Submit" />
                 </form>
-
-                <Link className="links" to="./strainList">
+            <Link className="links" to="./strainList">
                     <button>Return to strain Page</button>
                 </Link>
             </div>

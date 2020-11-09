@@ -21,7 +21,7 @@ export default class Strainlist extends Component {
             <div className="strains">
                 <Link to="/"></Link>
                 <Link to="/addStrain">
-                    <button>add strain</button>
+                    <button className="strains">add strain</button>
                 </Link>
                 
                 <div className="strainList">
