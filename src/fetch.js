@@ -5,27 +5,27 @@ const URL = process.env.REACT_APP_API_URL || 'https://frozen-island-79303.heroku
 
 
 export async function fetchStrains() {
-    try {
+    try{
         const response = await request.get(`${URL}strains/`);
         return response.body;
-    } catch (e) {
+    } catch(e) {
         throw e;
     }
 }
 
 export async function fetchStrain(someId) {
-    try {
+    try{
         const response = await request.get(`${URL}strains/${someId}`);
         return response.body;
-    } catch (e) {
+    } catch(e) {
         throw e;
     }
 }
 export async function fetchGrowers() {
-    try {
+    try{
         const response = await request.get(`${URL}growers`);
         return response.body;
-    } catch (e) {
+    } catch(e) {
         throw e;
     }
 }
@@ -33,31 +33,31 @@ export async function fetchGrowers() {
 export async function createStrain(newStrain) {
     try {
         await request
-            .post(`${URL}strains`)
-            .send(newStrain);
-
+        .post(`${URL}strains`)
+        .send(newStrain);
+        
         return;
-    } catch (err) {
+    } catch(err) {
         throw err;
     }
 }
 export async function updateStrain(someId, newStrain) {
     try {
         await request
-            .put(`${URL}strains/${someId}`)
-            .send(newStrain);
-
+        .put(`${URL}strains/${someId}`)
+        .send(newStrain);
+        
         return;
-    } catch (err) {
+    } catch(err) {
         throw err;
     }
 }
 export async function deleteStrain(someId) {
     try {
         await request.delete(`${URL}strains/${someId}`);
-
+        
         return;
-    } catch (err) {
+    } catch(err) {
         throw err;
     }
 }

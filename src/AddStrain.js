@@ -44,7 +44,7 @@ export default class AddStrain extends Component {
                         <option value="true">Yes</option>
                         <option value="false">No</option>
                     </select></label>
-                    <label>Grower: <select name="supplier" id="supplier" onChange={this.handleChange}>
+                    <label>Grower: <select name="grower" id="grower" onChange={this.handleChange}>
                         {
                             this.state.growers.map(grower => <option key={grower.id} value={grower.id}>
                                 {grower.grower}

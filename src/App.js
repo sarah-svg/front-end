@@ -7,8 +7,7 @@ import {
 import StrainList from './Strainlist.js';
 import Home from './Home.js';
 import AddStrain from './AddStrain.js';
-
-import './App.css';
+import StrainDetail from './StrainDetail.js';
 import Header from './Header.js';
 // Params are placeholders in the URL that begin
 // with a colon, like the `:id` param defined in
@@ -38,7 +37,11 @@ export default class ParamsExample extends Component {
               exact
               render= {(routerProps) => <AddStrain { ...routerProps} />}
             />   
-                
+              <Route 
+              path="/strainDetail" 
+              exact
+              render= {(routerProps) => <StrainDetail { ...routerProps} />}
+            />         
           </Switch>
           
   

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import StrainItem from './StrainItem.js';
 import { Link } from 'react-router-dom';
 import { fetchStrains } from './fetch.js';
 
@@ -26,7 +26,7 @@ export default class Strainlist extends Component {
                 
                 <div className="strainList">
                     {this.state.strains.map((strain, i) => {
-                        
+                        return <StrainItem key={i} strain={strain} />
                     })}
                 </div>
 
