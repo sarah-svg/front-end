@@ -4,7 +4,7 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                <h2> All your needs in one place!</h2>
+                <h2 className="add"> All your strains in one place!</h2>
             </div>
         )
     }

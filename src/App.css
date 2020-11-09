@@ -1,0 +1,110 @@
+.App {
+    text-align: center;
+    border: 20px outset #21348a;
+    justify-content: center;
+ 
+  }
+h2{
+  text-align: center;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+    0 0 15px #FFF, 0 0 20px rgb(76, 32, 126), 0 0 30px rgb(117, 40, 153), 
+    0 0 40px #21348a, 0 0 55px #21348a, 0 0 75px #49ff18;
+    background-color: burlywood;
+  color: black;
+  justify-content: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    background-color: honeydew;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+     0 0 15px #FFF, 0 0 20px rgb(125, 125, 204), 0 0 30px rgb(88, 88, 224), 
+     0 0 40px #21348a, 0 0 55px #21348a, 0 0 75px #49ff18;
+     background-color: khaki;
+
+
+
+}
+
+img{
+    width: 175px;
+    height: 175px;
+    filter: saturate(130%) contrast(110%) drop-shadow(12px 10px 8px);
+    transition: transform .55s;
+    border: 10px outset rgb(71, 157, 197);
+    margin: 20px;
+    flex-direction: column;
+    background-color: black;
+
+
+}
+  
+  img:hover {
+    position: relative;
+    transform: scale(2);
+    z-index: 1;
+    color: rgb(80, 185, 199);;
+    filter: saturate(120%) contrast(120%) drop-shadow(12px 10px 8px);
+  }
+.strains{
+  font-size: 2rem;
+  text-align: center;
+  border: 50px outset rgb(80, 185, 199);;
+  justify-content: center;
+  background-color:rgb(80, 185, 199);
+  filter: saturate(130%) contrast(110%) drop-shadow(12px 10px 8px);
+  transition: transform .15s;
+  
+}
+.strainLists:hover{
+  position: relative;
+  transform: scale(2);
+  z-index: 1;
+  color:  palegreen;
+  filter: saturate(120%) contrast(120%) drop-shadow(12px 10px 8px);
+}
+.strainLists{
+  border: 10px outset greenyellow;
+  justify-content: center;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+    0 0 15px #FFF, 0 0 20px rgb(76, 32, 126), 0 0 30px rgb(117, 40, 153), 
+    0 0 40px #21348a, 0 0 55px #21348a, 0 0 75px #49ff18;
+}
+.update{
+  border: 50px outset rgb(36, 130, 143);
+  justify-content: center;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+  0 0 15px #FFF, 0 0 20px rgb(76, 32, 126), 0 0 30px rgb(117, 40, 153), 
+  0 0 40px #21348a, 0 0 55px #21348a, 0 0 75px #49ff18;
+
+}
+.blue{
+  background-color: aquamarine;
+}
+.product{
+  background-color: burlywood;
+  border-top: 7px outset #176091;
+  border-bottom: 7px outset #2d5d7e;
+}
+.updatePage{
+
+  background-color: burlywood;
+  border-top: 7px outset #176091;
+  border-bottom: 7px outset #2d5d7e;
+
+}
+.add{
+  background-color: burlywood;
+  border-top: 20px outset #176091;
+  border-bottom: 30px outset #2d5d7e;
+}
+ul{
+  font-size: 1rem;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+  0 0 15px #FFF, 0 0 20px rgb(76, 32, 126), 0 0 30px rgb(117, 40, 153), 
+  0 0 40px #21348a, 0 0 55px #21348a, 0 0 75px #49ff18;
+}
