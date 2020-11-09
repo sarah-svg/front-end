@@ -4,17 +4,17 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import DetailPage from './DetailPage.js';
+import StrainList from './Strainlist.js';
 import Home from './Home.js';
-import Header from './Header.js'
-import './App.css';
-import CreateColorPage from './CreateColorPage.js';
+import AddStrain from './AddStrain.js';
+import StrainDetail from './StrainDetail.js';
+import Header from './Header.js';
 // Params are placeholders in the URL that begin
 // with a colon, like the `:id` param defined in
 // the route in this example. A similar convention
 // is used for matching dynamic segments in other
 // popular web frameworks like Rails and Express.
-
+//////////////looks
 export default class ParamsExample extends Component {
   render() {
     return (
@@ -23,20 +23,25 @@ export default class ParamsExample extends Component {
           <Header />
           <Switch>
           <Route 
-              path="/createColorPage" 
+              path="/strainList" 
               exact
-              render= {(routerProps) => <CreateColorPage { ...routerProps} />}
+              render= {(routerProps) => <StrainList { ...routerProps} />}
             /> 
-            <Route 
-              path="/detailPage" 
-              exact
-              render= {(routerProps) => <DetailPage { ...routerProps} />}
-            />   
             <Route 
               path="/" 
               exact
               render= {(routerProps) => <Home { ...routerProps} />}
-            />      
+            />   
+            <Route 
+              path="/addStrain" 
+              exact
+              render= {(routerProps) => <AddStrain { ...routerProps} />}
+            />   
+              <Route 
+              path="/strainDetail" 
+              exact
+              render= {(routerProps) => <StrainDetail { ...routerProps} />}
+            />         
           </Switch>
           
   
